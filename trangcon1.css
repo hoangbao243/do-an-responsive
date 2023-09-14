@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ 
+
+
+ html {
+    scroll-behavior: smooth;
+    line-height: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+ }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex {
+    display: flex;
+}
+
+.white {
+    color: white;
+}
+
+.red {
+    color: red;
+}
+
+.bgr-f0 {
+    background-color: #f0f0f0;
+}
+
+
+.sub-header {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.sub-header img {
+    margin: 15px 30px 25px;
+    max-width: 197px;
+    
+}
+
+#header {
+    /* height: 46px; */
+    background-color: black;
+    /* position: fixed; */  
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+
+.giohang {
+    position: relative;
+    cursor: pointer;
+    left: 150px;
+    top: 30px;
+}
+
+.giohang a {
+    
+}
+
+.menu {
+    background-color: #f0f0f0;
+}
+
+#nav > li > a {
+    color: black;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    background-color: #ccc;
+}
+
+#nav {
+    display: block;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#nav img {
+    width: 229px;
+    display: block;
+    float: left;
+    z-index: 1;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+.giohang a img {
+    filter: invert(100%);
+}
+
+.input {
+    margin-top: 26px;
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+.input input {
+    padding: 15px;
+    padding-right: 300px;
+    outline: none;
+}
+
+.cart {
+    margin-top: 10px;
+    margin-left: 50px;
+    height: 34px;
+    color: white;
+    padding: 6px;
+    border: solid white 1px;
+    border-radius: 10%;
+    opacity: 100%;
+}
+
+.cart:hover {
+    cursor: pointer;
+}
+
+.cart .ti-shopping-cart {
+    color: white;
+    font-size: 30px;
+}
+
+
+
+.toggle {
+    position: relative;
+    display: none;
+    background-color: rgb(32, 31, 31) ;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.head i {
+    position: absolute;
+    right: 10px;
+}
+
+
+
+.hinh-anh-sp img {
+    height: 340px; 
+    width: 300px;
+    position: relative;
+    left: 25%;
+}
+.san-pham {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+
+.content {
+    width: 80%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+
+.ten-sp {
+    margin-bottom: 50px;
+}
+
+.ten-sp h2 {
+    line-height: 30px;
+    font-size: 24px;
+    padding-top: 25px;
+}
+
+
+.gia-1 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.gia-1 h2, .gia-1 h3 {
+    margin-left: 25px;
+}
+
+
+
+.cau-hinh {
+    display: flex;
+}
+
+.buy a {
+    padding: 18px 129px  ;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background-color: #c8191f;
+}
+
+.buy-2 a {
+    padding: 18px 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background-color: rgb(51, 122, 183);
+}
+
+.buy-2, .buy {
+    margin-top: 60px;
+}
+
+.call {
+    display: flex;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: white;
+    display: flex;  
+    padding-bottom: 50px;
+}
+
+.footer .footer-1 {
+    width: 250px;
+    margin: 0 50px;
+    margin-top: 50px;
+}
+
+.footer .footer-1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer .footer-1 a:hover {
+    color: #ed1c24;
+    transition: .3s ease-out;
+}
+
+.footer-plus {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 30px 150px;
+}
+
+.footer-plus p {
+    line-height: 1.4rem;
+    padding: 10px 0;
+}
+
+.bct {
+    text-align: center;
+}
+
+.bct img{
+    vertical-align: middle;
+    padding: 0 5px;
+}
+
+@media screen and (max-width: 1023px) {
+    .main-menu {
+        flex-direction: column;
+        display: none;  
+    }
+    .toggle {
+        display: block;
+    }
+
+}   
+
+
